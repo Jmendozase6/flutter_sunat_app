@@ -6,7 +6,7 @@ import 'package:sunat_app/core/constants/colors.dart';
 import 'package:sunat_app/view/styles/button_styles.dart';
 import 'package:sunat_app/view/styles/styles.dart';
 import 'package:sunat_app/view/styles/text_field.styles.dart';
-import 'package:sunat_app/view_model/sign_in_controller.dart';
+import 'package:sunat_app/view_model/sign_in_view_model.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField(

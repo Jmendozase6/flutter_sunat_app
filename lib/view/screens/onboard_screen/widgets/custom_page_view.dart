@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:sunat_app/core/constants/colors.dart';
 import 'package:sunat_app/core/constants/strings.dart';
 import 'package:sunat_app/view/styles/styles.dart';
-import 'package:sunat_app/view_model/onboard_controller.dart';
+import 'package:sunat_app/view_model/onboard_view_model.dart';
 
 class CustomPageView extends StatelessWidget {
   const CustomPageView({
