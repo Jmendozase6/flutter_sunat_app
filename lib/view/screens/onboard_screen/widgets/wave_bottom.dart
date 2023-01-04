@@ -20,7 +20,6 @@ class WaveBottom extends StatelessWidget {
 class _HeaderWaveBottomPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    // TODO: implement paint
     final paint = Paint();
 
     // Propiedades
