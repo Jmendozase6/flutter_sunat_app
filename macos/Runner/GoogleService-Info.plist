@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>32781420828-j54302r2fmj53mb4eu7ftcmsc3nj10tg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.32781420828-j54302r2fmj53mb4eu7ftcmsc3nj10tg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCk2SonocYGYfxK97Qe83Q3IxDLzZVwOZM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>32781420828</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.sunatApp</string>
+	<key>PROJECT_ID</key>
+	<string>sunat-flutter-app-caa2f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sunat-flutter-app-caa2f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:32781420828:ios:1ca3c7cb03df08a55dd2d9</string>
+</dict>
+</plist>

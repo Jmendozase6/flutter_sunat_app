@@ -3,26 +3,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:provider/provider.dart';
 import 'package:sunat_app/core/constants/colors.dart';
-import 'package:sunat_app/data/data_providers/google_sign_in_provider.dart';
 import 'package:sunat_app/view/common_widgets/common_widgets.dart';
-import 'package:sunat_app/view/router/app_router.dart';
 import 'package:sunat_app/view/screens/home_screen/home_screen.dart';
-import 'package:sunat_app/view/screens/sign_in_screen/widgets/custom_text_button.dart';
 import 'package:sunat_app/view/styles/styles.dart';
 
-class SignInScreen extends StatefulWidget {
-  const SignInScreen({super.key});
+class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
 
   @override
-  State<SignInScreen> createState() => _SignInScreenState();
+  State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
-class _SignInScreenState extends State<SignInScreen> {
+class _SignUpScreenState extends State<SignUpScreen> {
   // Text editings controllers
   final emailController = TextEditingController();
-
   final passwordController = TextEditingController();
 
   // test@gmail.com   test12
@@ -88,20 +83,32 @@ class _SignInScreenState extends State<SignInScreen> {
                   style: TextStyles.headline2Bold(color: titleColor),
                 ),
                 Text(
-                  'Ingresa tus datos para\npoder iniciar sesión',
+                  'Registrate ingresando \ntus datos',
                   textAlign: TextAlign.center,
                   style:
                       TextStyles.headline7(color: titleColor.withOpacity(0.5)),
                 ),
                 SizedBox(
-                  height: 200.h,
-                  width: 200.w,
-                  child: SvgPicture.asset(
-                    'assets/images/signin.svg',
-                    fit: BoxFit.fill,
-                  ),
+                  height: 160.h,
+                  width: 160.w,
+                  child: SvgPicture.asset('assets/images/signin.svg',
+                      fit: BoxFit.cover),
                 ),
                 SizedBox(height: 10.h),
+                // CustomTextField(
+                //   controller: emailController,
+                //   hintText: 'Nombres',
+                //   obscureText: false,
+                //   icon: FontAwesomeIcons.user,
+                // ),
+                // SizedBox(height: 10.h),
+                // CustomTextField(
+                //   controller: emailController,
+                //   hintText: 'Apellidos',
+                //   obscureText: false,
+                //   icon: FontAwesomeIcons.user,
+                // ),
+                // SizedBox(height: 10.h),
                 CustomTextField(
                   controller: emailController,
                   hintText: 'Correo electrónico',
@@ -119,7 +126,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 ),
                 SizedBox(height: 20.h),
                 CustomMaterialButton(
-                  text: 'Iniciar sesión',
+                  text: 'Registrarme',
                   showBorder: true,
                   onPressed: signUserIn,
                   minWidht: 0.7.sw,
@@ -128,42 +135,19 @@ class _SignInScreenState extends State<SignInScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(
-                        height: 1.h,
-                        width: 0.1.sw,
-                        color: titleColor.withOpacity(0.2)),
-                    CustomTextButton(
-                        text: '¿No tienes una cuenta?',
-                        onPressed: () {
-                          Navigator.pushNamed(context, AppRouter.signUp);
-                        }),
-                    Container(
-                        height: 1.h,
-                        width: 0.1.sw,
-                        color: titleColor.withOpacity(0.2)),
-                  ],
-                ),
-                SizedBox(height: 10.h),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
                     _SignInButton(
                         imgSrc: 'assets/icons/google_icon.svg',
-                        onTap: () async {
-                          final provider = Provider.of<GoogleSignInProvider>(
-                              context,
-                              listen: false);
-                          provider.googleLogin();
+                        onTap: () {
+                          print('XD');
                         }),
                     SizedBox(width: 20.w),
                     _SignInButton(
                         imgSrc: 'assets/icons/apple_icon.svg',
                         onTap: () {
                           print('xd');
-                        }),
+                        })
                   ],
                 ),
-                SizedBox(height: 20.h),
               ],
             ),
           ),

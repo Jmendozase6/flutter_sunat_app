@@ -1,4 +1,4 @@
-package com.example.sunat_app
+package com.dev.meow.sunat.flutter
 
 import io.flutter.embedding.android.FlutterActivity
 

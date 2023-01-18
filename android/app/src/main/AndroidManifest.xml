@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sunat_app">
+    package="com.dev.meow.sunat.flutter">
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="sunat_app"
         android:name="${applicationName}"

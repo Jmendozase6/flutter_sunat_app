@@ -7,6 +7,7 @@ AlertDialog alert = AlertDialog(
     continueButton,
   ],
 );
+
 Widget continueButton = TextButton(
   child: const Text('Continuar'),
   onPressed: () {},

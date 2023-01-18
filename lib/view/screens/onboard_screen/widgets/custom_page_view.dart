@@ -74,14 +74,14 @@ class _DotIndex extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedContainer(
+    return Container(
       height: isSelected ? 10.h : 5.h,
       width: isSelected ? 10.w : 5.w,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: isSelected ? primaryColor : Colors.grey,
       ),
-      duration: const Duration(milliseconds: 200),
+      // duration: const Duration(milliseconds: 100),
     );
   }
 }

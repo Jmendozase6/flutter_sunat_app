@@ -9,11 +9,20 @@ import 'package:sunat_app/view/styles/text_field.styles.dart';
 import 'package:sunat_app/view_model/sign_in_view_model.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField(
-      {super.key, required this.hintText, required this.obscureText});
+  const CustomTextField({
+    super.key,
+    required this.hintText,
+    required this.obscureText,
+    required this.icon,
+    required this.controller,
+    required this.keyboardType,
+  });
 
   final String hintText;
   final bool obscureText;
+  final IconData icon;
+  final TextEditingController controller;
+  final TextInputType keyboardType;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +32,9 @@ class CustomTextField extends StatelessWidget {
       height: 40.h,
       width: 0.9.sw,
       child: TextFormField(
+        controller: controller,
         obscureText: obscureText,
+        keyboardType: keyboardType,
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle: TextStyles.headline7(color: titleColor.withOpacity(0.2)),
@@ -33,8 +44,10 @@ class CustomTextField extends StatelessWidget {
           focusedBorder: TextFieldStyles.outlineInputBorder,
           filled: true,
           fillColor: Colors.white,
-          prefixIcon: Icon(FontAwesomeIcons.envelope,
-              size: 13.h, color: primaryColor.withOpacity(0.5)),
+          prefixIcon: Padding(
+            padding: const EdgeInsets.only(left: 10),
+            child: Icon(icon, size: 13.h, color: primaryColor.withOpacity(0.5)),
+          ),
           suffixIcon: obscureText
               ? IconButton(
                   style: ButtonStyles.buttonStyle,
