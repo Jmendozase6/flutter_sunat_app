@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "32781420828",
+    "project_id": "sunat-flutter-app-caa2f",
+    "storage_bucket": "sunat-flutter-app-caa2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32781420828:android:61def62f361106465dd2d9",
+        "android_client_info": {
+          "package_name": "com.dev.meow.sunat.flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32781420828-1bofc6ta0vojt84oj23efhto3jc6ksuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfRd3E28B0V3pTl6DoVndvce0uadinXp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32781420828-1bofc6ta0vojt84oj23efhto3jc6ksuh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "32781420828-2qd1smgdrfss1ftigpfoojmr60vdvcau.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dev.meow.sunat.flutter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32781420828:android:d837ba93205bb81f5dd2d9",
+        "android_client_info": {
+          "package_name": "com.example.sunat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32781420828-1bofc6ta0vojt84oj23efhto3jc6ksuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfRd3E28B0V3pTl6DoVndvce0uadinXp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32781420828-1bofc6ta0vojt84oj23efhto3jc6ksuh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "32781420828-2qd1smgdrfss1ftigpfoojmr60vdvcau.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dev.meow.sunat.flutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
